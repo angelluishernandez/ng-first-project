@@ -4,21 +4,19 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-shopping-list',
   templateUrl: './shopping-list.component.html',
-  styleUrls: ['./shopping-list.component.css']
+  styleUrls: ['./shopping-list.component.css'],
 })
 export class ShoppingListComponent implements OnInit {
   ingredients: Ingredient[] = [
-    new Ingredient("Rice", 3), 
-    new Ingredient("Tomatoes", 10)
+    new Ingredient('Rice', 3),
+    new Ingredient('Tomatoes', 10),
   ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
-  onIngredientAdded(ingredient: Ingredient){
-    this.ingredients.push(ingredient)
+  onIngredientAdded(ingredient: Ingredient) {
+    this.ingredients.push(ingredient);
   }
-  
 }

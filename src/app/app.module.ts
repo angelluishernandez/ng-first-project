@@ -11,7 +11,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RecipesComponent } from './recipes/recipes.component';
-import {FormsModule } from "@angular/forms"
+import { FormsModule } from '@angular/forms';
+import { DropDownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -24,14 +25,10 @@ import {FormsModule } from "@angular/forms"
     ShoppingListComponent,
     ShoppingListEditComponent,
     RecipesComponent,
-    
+    DropDownDirective,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule, 
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
